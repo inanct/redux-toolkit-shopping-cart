@@ -1,12 +1,10 @@
 import React, { Fragment } from 'react'
-import TopNavbar from '../Components/Header/TopNavbar'
-import Footer from '../Components/Footer/Footer'
+
 
 const Home = () => {
   return (
     <Fragment>
-        <TopNavbar/>
-        <Footer/>
+        <h1 className='text-center mt-5' >HOME</h1>
     </Fragment>
   )
 }

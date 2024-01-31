@@ -1,8 +1,11 @@
 import React from 'react'
+import { NavbarBrand} from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
+
 
 const TopNavbar = () => {
   return (
@@ -11,11 +14,11 @@ const TopNavbar = () => {
 
     <Navbar bg='dark' expand="lg" variant='dark' >
       <Container>
-        <Navbar.Brand href="#home">Shopping Cart</Navbar.Brand>
+        <NavbarBrand>Shopping Cart</NavbarBrand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Link to="/" className='nav-link'>Home</Link>
             
             <NavDropdown title="Categories" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -28,8 +31,8 @@ const TopNavbar = () => {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#products">Products</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Link to="products" className='nav-link'>Products</Link>
+            <Link to="contact" className='nav-link'>Contact</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
