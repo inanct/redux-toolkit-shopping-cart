@@ -1,11 +1,13 @@
-import React, { Fragment } from 'react'
+
+import HeaderSlider from '../Components/Slider/HeaderSlider'
 
 
 const Home = () => {
   return (
-    <Fragment>
-        <h1 className='text-center mt-5' >HOME</h1>
-    </Fragment>
+    <div>
+        <h1 className='text-center mt-5 ' >HOME</h1>
+        <HeaderSlider />
+    </div>
   )
 }
 

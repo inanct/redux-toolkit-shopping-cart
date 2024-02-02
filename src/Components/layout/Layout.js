@@ -3,6 +3,7 @@ import TopNavbar from '../Header/TopNavbar'
 import { Outlet } from 'react-router'
 import Footer from '../Footer/Footer'
 
+
 const Layout = () => {
   return (
     <>
