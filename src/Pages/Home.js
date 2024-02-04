@@ -1,4 +1,5 @@
 
+import AllCategories from '../Components/Categories/AllCategories'
 import HeaderSlider from '../Components/Slider/HeaderSlider'
 
 
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
         <h1 className='text-center mt-5 ' >HOME</h1>
         <HeaderSlider />
+        <AllCategories/>
     </div>
   )
 }

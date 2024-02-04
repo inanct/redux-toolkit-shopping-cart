@@ -5,8 +5,8 @@ const HeaderSlider = () => {
   return (
     <div >
         <Container >
-<Carousel variant='dark' style={{maxHeight:"650px"}}>
-            <CarouselItem style={{maxHeight:"75vh"}}>
+<Carousel variant='dark' >
+            <CarouselItem style={{maxHeight:"650px"}}>
                 <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" 
                 className='d-block w-100'
                 style={{height: "100wh", objectFit:"cover"}}
@@ -21,7 +21,7 @@ const HeaderSlider = () => {
             </CarouselCaption>
             </CarouselItem>
 
-            <CarouselItem style={{maxHeight:"75vh"}}>
+            <CarouselItem style={{maxHeight:"650px"}}>
                 <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" 
                 className='d-block w-100'
                 style={{height: "100wh", objectFit:"cover"}}
@@ -36,7 +36,7 @@ const HeaderSlider = () => {
             </CarouselCaption>
             </CarouselItem>
 
-            <CarouselItem  style={{maxHeight:"75vh"}}>
+            <CarouselItem  style={{maxHeight:"650px"}}>
                 <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" 
                 className='d-block w-100'
                 style={{height: "100wh", objectFit:"cover"}}
@@ -52,7 +52,7 @@ const HeaderSlider = () => {
             </CarouselItem>
         </Carousel>
         </Container>
-        <button>Add</button>
+        
         
     </div>
   )
