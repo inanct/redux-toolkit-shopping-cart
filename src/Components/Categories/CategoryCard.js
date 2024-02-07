@@ -1,15 +1,16 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-
+import "./CategoryCard.css"
 const CategoryCard = ({category}) => {
   return (
     <Link to={`cayegory/${category}`} className='text-decoration-none text-dark'>
-        <Card>
+        <Card className='custom-card'>
             <Card.Body>
                 <Card.Text className='text-capitalize'>
                     {category}
                 </Card.Text>
+                
             </Card.Body>
         </Card>
     
