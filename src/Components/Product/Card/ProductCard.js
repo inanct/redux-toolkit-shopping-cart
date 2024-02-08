@@ -3,16 +3,20 @@ import "./ProductCard.css"
 import { Link } from 'react-router-dom'
 import { Card } from 'react-bootstrap'
 
-const ProductCard = ({product}) => {
+
+const ProductCard = ({ image, title, price, id }) => {
   return (
     <>
-    <Link to={`product/${product.id}`} className='text-dark text-decoration-none'>
+    <Link  className='text-dark text-decoration-none'>
     <Card className='custom-card'>
-        <Card.Img variant='top' className='py-3 card-img' src={product.image}/>
+        <Card.Img variant='top' className='py-3 card-img' src={image}/>
         <Card.Body className='text-center'>
-            <Card.Title className='fs-6'>{product.title.slice(0,30)}</Card.Title>
+            <Card.Title className='fs-6'>{title}</Card.Title>
             <Card.Text className='text-capitalize text-decoration-none fs-6'>
-             {product.category}
+             ${price}
+            </Card.Text>
+            <Card.Text className='text-capitalize text-decoration-none fs-6'>
+              Serial Number:{id}
             </Card.Text>
         </Card.Body>
     </Card>

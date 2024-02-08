@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import "./CategoryCard.css"
 const CategoryCard = ({category}) => {
   return (
-    <Link to={`cayegory/${category}`} className='text-decoration-none text-dark'>
+    <Link className='text-decoration-none text-dark'>
         <Card className='custom-card'>
             <Card.Body>
                 <Card.Text className='text-capitalize'>
