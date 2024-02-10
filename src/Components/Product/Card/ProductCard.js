@@ -1,10 +1,13 @@
 import React from 'react'
 import "./ProductCard.css"
 import { Link } from 'react-router-dom'
-import { Card } from 'react-bootstrap'
+import { Button, Card } from 'react-bootstrap'
+import { useDispatch } from 'react-redux'
+import { addToCart } from '../../../redux/slice/cartSlice'
 
 
-const ProductCard = ({ image, title, price, id }) => {
+const ProductCard = ({ image, title, price, id}) => {
+  const dispatch = useDispatch()
   return (
     <>
     <Link  className='text-dark text-decoration-none'>
@@ -15,10 +18,11 @@ const ProductCard = ({ image, title, price, id }) => {
             <Card.Text className='text-capitalize text-decoration-none fs-6'>
              ${price}
             </Card.Text>
-            <Card.Text className='text-capitalize text-decoration-none fs-6'>
-              Serial Number:{id}
-            </Card.Text>
+        
         </Card.Body>
+        <Button className='bg-dark border-dark' onClick={() => dispatch(addToCart({image, title, price, id}))}>
+          Add to Cart
+        </Button>
     </Card>
     </Link>
     </>
