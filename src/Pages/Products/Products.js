@@ -9,6 +9,7 @@ import ProductCard from '../../Components/Product/Card/ProductCard';
 import "./product.css"
 
 
+
 const Products = () => {
   const dispatch = useDispatch();
 
@@ -61,6 +62,7 @@ const Products = () => {
        
        {
         products.filter((product) => product.category === "men's clothing").map((product) => (
+          
           <ProductCard {...product} />
         ))
        }
