@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Card,  Container, Row } from 'react-bootstrap'
+import { Button, Card,    Container, Row } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { removefromCart } from '../redux/slice/cartSlice'
 
@@ -13,6 +13,11 @@ const Basket = () => {
         <Row style={{ height: '43rem' }} className='d-flex    border border-dark shadow-lg p-3 mb-5 bg-body rounded mt-5'>
 {
             cartitems.map(item => {
+             
+              
+              
+              
+              
                 return (
                     <Card style={{ width: '18rem', height:"300px" }}>
                         <Card.Img src={item.image} alt="" />

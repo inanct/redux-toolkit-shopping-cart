@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavbarBrand} from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -15,9 +14,9 @@ const TopNavbar = () => {
 
 
 
-    <Navbar bg='dark' expand="lg" variant='dark' >
+    <Navbar bg='dark' expand="lg" variant='dark' sticky="top">
       <Container>
-        <NavbarBrand>Shopping Cart</NavbarBrand>
+        <Link to="/" className='text-decoration-none fs-2 text-secondary fw-bold'>Shopping Cart</Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">

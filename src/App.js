@@ -10,7 +10,8 @@ import Basket from "./Pages/Basket";
 
 function App() {
   return (
-    <BrowserRouter>
+    
+<BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home/>}/>
@@ -21,6 +22,8 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    
+    
     
   );
 }
