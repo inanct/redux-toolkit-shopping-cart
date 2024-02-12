@@ -19,7 +19,7 @@ const Basket = () => {
               
               
                 return (
-                    <Card style={{ width: '18rem', height:"300px" }}>
+                    <Card key={item.id} style={{ width: '18rem', height:"300px" }}>
                         <Card.Img src={item.image} alt="" />
                         <Card.Body>
                           <Card.Text>${item.price}</Card.Text>

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchProducts } from '../../redux/slice/productSlice';
-import { Container, Row} from 'react-bootstrap';
+import { Col, Container, Row} from 'react-bootstrap';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -63,7 +63,9 @@ const Products = () => {
        {
         products.filter((product) => product.category === "men's clothing").map((product) => (
           
-          <ProductCard {...product} />
+          <Col key={product.id} xs={12} sm={6} md={4} lg={3}>
+        <ProductCard {...product}/>
+      </Col>
         ))
        }
       </Slider>
@@ -75,7 +77,9 @@ const Products = () => {
         
         {
           products.filter((product) => product.category === "women's clothing").map((product)=> (
-            <ProductCard {...product}/>
+             <Col key={product.id} xs={12} sm={6} md={4} lg={3}>
+        <ProductCard {...product}/>
+      </Col>
           ))
         }
       </Slider>
@@ -86,7 +90,9 @@ const Products = () => {
 <Slider {...settings}>
         {
           products.filter((product)=> product.category === "jewelery").map((product) => (
-            <ProductCard {...product}/>
+             <Col key={product.id} xs={12} sm={6} md={4} lg={3}>
+        <ProductCard {...product}/>
+      </Col>
           ))
         } 
       </Slider>
@@ -98,7 +104,9 @@ const Products = () => {
       <Slider {...settings}>
         {
           products.filter((product)=> product.category === "electronics").map((product) => (
-            <ProductCard {...product}/>
+            <Col key={product.id} xs={12} sm={6} md={4} lg={3}>
+        <ProductCard {...product}/>
+      </Col>
           ))
         }
       </Slider>
